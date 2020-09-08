@@ -15,19 +15,8 @@ export const GameDebugView = observer<{ className?: string }>(
     const game = useGame();
     return (
       <Layout className="PacManDebugView">
-        <Card title="Game" size="small" bordered={false}>
+        <Card bordered={false}>
           <Row>
-            <Col flex="0 0 56px">
-              <Switch
-                checked={store.debugState.gameViewOptions.hitBox}
-                onChange={action(
-                  checked => (store.debugState.gameViewOptions.hitBox = checked)
-                )}
-              />
-            </Col>
-            <Col flex="0 0 auto">
-              <Text>Show Hit Boxes</Text>
-            </Col>
             <Col flex="0 0 48px"></Col>
 
             <Col flex="0 0 56px">

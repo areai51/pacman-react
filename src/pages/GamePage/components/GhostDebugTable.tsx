@@ -43,18 +43,7 @@ const columns: ColumnsType<Ghost> = [
     align: 'right',
     render: ghost => <Observer>{() => ghost.stateChanges.toString()}</Observer>,
   },
-  {
-    title: 'X',
-    width: 32,
-    align: 'right',
-    render: ghost => <Observer>{(): any => ghost.tileCoordinates.x}</Observer>,
-  },
-  {
-    title: 'Y',
-    width: 32,
-    align: 'right',
-    render: ghost => <Observer>{(): any => ghost.tileCoordinates.y}</Observer>,
-  },
+
   {
     title: 'Paused',
     align: 'center',
